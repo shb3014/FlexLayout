@@ -14,7 +14,7 @@ export class Orientation {
     private _name: string;
 
     /** @internal */
-    private constructor(name: string) {
+    constructor(name: string) {
         this._name = name;
     }
 
