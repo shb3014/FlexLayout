@@ -77,7 +77,7 @@ export const Tab = (props: ITabProps) => {
             data-layout-path={path}
             onMouseDown={onMouseDown}
             onTouchStart={onMouseDown}
-            onPointerDown={onMouseDown}
+            // onPointerDown={onMouseDown}
             style={style}>
             <ErrorBoundary message={props.layout.i18nName(I18nLabel.Error_rendering_component)}>
                 <Fragment>{child}</Fragment>
