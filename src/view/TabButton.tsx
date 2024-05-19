@@ -122,10 +122,10 @@ export const TabButton = (props: ITabButtonProps) => {
     };
 
     const onTextBoxKeyPress = (event: React.KeyboardEvent<HTMLInputElement>) => {
-        if (event.code === 'Escape') {
+        if (event.code === "Escape") {
             // esc
             layout.setEditingTab(undefined);
-        } else if (event.code === 'Enter') {
+        } else if (event.code === "Enter") {
             // enter
             layout.setEditingTab(undefined);
             layout.doAction(Actions.renameTab(node.getId(), (event.target as HTMLInputElement).value));
@@ -155,7 +155,7 @@ export const TabButton = (props: ITabButtonProps) => {
     const renderState = getRenderStateEx(layout, node, iconFactory, titleFactory);
 
     let content = renderState.content ? (
-        <div className={cm(CLASSES.FLEXLAYOUT__TAB_BUTTON_CONTENT)}>
+        <div className={cm(CLASSES.FLEXLAYOUT__TAB_BUTTON_CONTENT)} style={{ userSelect: "none" }}>
             {renderState.content}
         </div>) : null;
 
