@@ -53,10 +53,10 @@ export const Splitter = (props: ISplitterProps) => {
         outlineDiv.current.className = layout.getClassName(CLASSES.FLEXLAYOUT__SPLITTER_DRAG);
         outlineDiv.current.style.cursor = node.getOrientation() === Orientation.HORZ ? "ns-resize" : "ew-resize";
         const r = node.getRect();
-        if (node.getOrientation() === Orientation.VERT && r.width < 2) {
-            r.width = 2;
-        } else if (node.getOrientation() === Orientation.HORZ && r.height < 2) {
-            r.height = 2;
+        if (node.getOrientation() === Orientation.VERT && r.width < 1) {
+            r.width = 1;
+        } else if (node.getOrientation() === Orientation.HORZ && r.height < 1) {
+            r.height = 1;
         }
 
         r.positionElement(outlineDiv.current);
