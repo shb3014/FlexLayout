@@ -74,6 +74,10 @@ export class RowNode extends Node implements IDropTarget {
         return this._attributes.weight as number;
     }
 
+    getConfig() {
+        return this._attributes.config as any;
+    }
+
     getWidth() {
         return this._getAttr("width") as number | undefined;
     }

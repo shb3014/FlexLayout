@@ -107,6 +107,10 @@ export abstract class Node {
             this._listeners[event](params);
         }
     }
+    
+    getAttr(name:string){
+        return this._getAttr(name);
+    }
 
     /** @internal */
     _getAttr(name: string) {
