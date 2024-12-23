@@ -55,7 +55,7 @@
   left: 0;
   top: 0;
   right: 0;
-  bottom: 0;
+  bottom: 31px;
   position: absolute;
   display: flex;
 }
@@ -63,7 +63,7 @@
   left: 0;
   top: 0;
   right: 0;
-  bottom: 0;
+  bottom: 31px;
   position: absolute;
   z-index: 1000;
 }
@@ -645,14 +645,14 @@
   left: 0;
   top: 0;
   right: 0;
-  bottom: 0;
+  bottom: 31px;
   position: absolute;
 }
 .flexlayout__error_boundary_container {
   left: 0;
   top: 0;
   right: 0;
-  bottom: 0;
+  bottom: 31px;
   position: absolute;
   display: flex;
   justify-content: center;

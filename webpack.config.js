@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
     mode: "development",
     entry: {
-        demo: "./examples/demo/App.tsx",
+        // demo: "./examples/demo/App.tsx",
     },
 
     output: {

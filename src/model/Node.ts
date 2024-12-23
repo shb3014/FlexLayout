@@ -106,7 +106,7 @@ export abstract class Node {
     }
 
     /** @internal */
-    getAttr(name: string) {
+    _getAttr(name: string) {
         let val = this.attributes[name];
 
         if (val === undefined) {
